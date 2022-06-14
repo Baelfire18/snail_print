@@ -19,7 +19,7 @@ pip install -U snail_print
 
 ### Usage
 
-https://user-images.githubusercontent.com/50716449/173491828-6f43cd05-6674-4631-97b3-5795cde1c4de.mp4
+![Presentation Demo Video](https://raw.githubusercontent.com/Baelfire18/snail_print/master/assets/presentacion_color.gif)
 
 *Video 1: Example of use of this real life print library*
 
