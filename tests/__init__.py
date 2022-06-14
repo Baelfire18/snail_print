@@ -1,4 +1,3 @@
-from cgi import print_form
 import unittest
 from snail_print import snail_print, RLL
 

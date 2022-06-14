@@ -1,5 +1,6 @@
 import sys
 
+
 # https://stackoverflow.com/questions/72575956/how-to-get-last-python-output
 class StdoutHandler:
     def __init__(self):
