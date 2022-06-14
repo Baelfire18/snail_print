@@ -3,7 +3,7 @@ name: CD
 on:
   push:
     tags:
-      - "release: v*"
+      - "v*"
 
 jobs:
   tagged-release:
