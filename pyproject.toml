@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "snail_print"
+version = "0.1.1"
+description = "A print funtion that slowly shows the output in console in real time"
+authors = ["Jose Antonio Castro <jacastro18@uc.cl>"]
+license = "MIT"
+readme = "ReadMe.md"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
