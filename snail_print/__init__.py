@@ -27,11 +27,8 @@ def snail_print(
     __validate_arguments(delay, sep, end, flush)
     try:
         height, _ = get_terminal_size()
-    except OSError as e:
-        if e.errno in (6, 25):
-            height = 80
-        else:
-            raise e
+    except OSError:
+        height = 80
 
     prev_output = stdout_handler.get_last_output_line().strip(RLL)
     string = sep.join([str(i) for i in objects])
