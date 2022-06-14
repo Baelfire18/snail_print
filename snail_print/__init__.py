@@ -28,7 +28,7 @@ def snail_print(
     try:
         height, _ = get_terminal_size()
     except OSError as e:
-        if e.errno in (5, 25):
+        if e.errno in (6, 25):
             height = 80
         else:
             raise e
