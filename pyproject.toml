@@ -5,6 +5,15 @@ description = "A print funtion that slowly shows the output in console in real t
 authors = ["Jose Antonio Castro <jacastro18@uc.cl>"]
 license = "MIT"
 readme = "ReadMe.md"
+repository= "https://github.com/Baelfire18/snail_print"
+keywords = ["print", "console", "realtime", "slowly"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Build Tools",
+]
 
 [tool.poetry.dependencies]
 python = "^3.7"
