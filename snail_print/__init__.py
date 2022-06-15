@@ -9,7 +9,7 @@ stdout_handler.start()
 RLL = "\x1b[1A\x1b[2K"  # Remove Last Line
 
 
-def __validate_arguments(delay: float, sep: str, end: str, flush: bool) -> None:
+def __validate_arguments(delay: float, sep: str, end: str) -> None:
     delay_type = type(delay)
     if not (delay_type is float or delay_type is int):
         raise TypeError("Argument 'delay' must be a float")
@@ -17,14 +17,10 @@ def __validate_arguments(delay: float, sep: str, end: str, flush: bool) -> None:
         raise TypeError("Argument 'sep' must be a string")
     if type(end) is not str:
         raise TypeError("Argument 'end' must be a string")
-    if type(flush) is not bool:
-        raise TypeError("Argument 'flush' must be a bool")
 
 
-def snail_print(
-    *objects, delay: float = 0.1, sep: str = " ", end: str = "\n", flush: bool = False
-) -> None:
-    __validate_arguments(delay, sep, end, flush)
+def snail_print(*objects, delay: float = 0.1, sep: str = " ", end: str = "\n") -> None:
+    __validate_arguments(delay, sep, end)
     try:
         height, _ = get_terminal_size()
     except OSError:
@@ -40,9 +36,9 @@ def snail_print(
         string_frag = string[0 : i + 1]
 
         if i == 0 and prev_output:
-            print(f"{RLL * times_RLL}{string_frag}", flush=flush)
+            print(f"{RLL * times_RLL}{string_frag}")
         elif (i == string_len - 1) and end != "\n":
-            print(f"{RLL * times_RLL}{prev_output + string_frag}", end=end, flush=flush)
+            print(f"{RLL * times_RLL}{prev_output + string_frag}", end=end)
         else:
-            print(f"{RLL * times_RLL}{prev_output + string_frag}", flush=flush)
+            print(f"{RLL * times_RLL}{prev_output + string_frag}")
         sleep(delay)

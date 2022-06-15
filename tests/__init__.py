@@ -228,7 +228,6 @@ class ValidationTests(unittest.TestCase):
             snail_print("hola", delay="random_string")
             snail_print("hola", delay=1234)
             snail_print("hola", end=1234)
-            snail_print("hola", flush=1234)
 
 
 if __name__ == "__main__":
