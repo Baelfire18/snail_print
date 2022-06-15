@@ -24,6 +24,13 @@ pip install -U snail_print
 
 Moreover, every console log in this video was made with the library and with [this file](https://github.com/Baelfire18/snail_print/master/presentation.py)
 
+Copy and paste this code and try it yourself!
+
+```python
+from snail_print import snail_print
+snail_print("Hello World", delay=0.2)
+```
+
 ## Documentation
 
 ### snail_print
