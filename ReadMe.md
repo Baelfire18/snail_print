@@ -1,10 +1,11 @@
 # Snail Print
 
-[![GitHub release](https://img.shields.io/github/v/release/Baelfire18/slow_print.svg)](../../releases/latest)
-[![lint][lint-image]][lint-url]
+[![GitHub release][release-image]][release-url]
+[![codeclimate][codeclimate-image]][codeclimate-url]
+![Tests & Linter][ci-url]
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 
-This library includes a print funtion that slowly shows the output in console in real time.
+This library includes a print funtion that slows down the showing of output in console, character by character, as though typed by a typewriter.
 
 
 ## Getting started
@@ -19,7 +20,7 @@ pip install -U snail_print
 
 ![Presentation Demo Video](https://raw.githubusercontent.com/Baelfire18/snail_print/master/assets/presentacion_color.gif)
 
-*Gif 1: Example of use of this real life print library*
+*Gif 1: Example of use of this real time print library*
 
 Moreover, every console log in this video was made with the library and with [this file](https://github.com/Baelfire18/snail_print/master/presentation.py)
 
@@ -28,22 +29,22 @@ Moreover, every console log in this video was made with the library and with [th
 ### snail_print
 
 ```python
-function snail_print(*objects, delay=0.1, sep=" ", end="\n", flush=False)
+function snail_print(*objects, delay=0.1, sep=" ", end="\n")
 ```
 
 #### Parameters
 
-+ `objects`: Can be any python object.
++ `objects`: Can be any or even multiple python objects.
 
-The object wicth will be printed slowly in real time.
+The objects whose string representation will be "snail printed".
 
 + `delay`: `float` or `int`, default `0.1`.
 
-The time between the addition in console of the next character.
+The delay, measured in seconds, between the printing of each character in `object`.
 
 + `sep`: `str`, default `" "`.
 
-In case of having mutiple arguments this may be separated by this string.
+In case of having multiple arguments, one sep will be placed between each and the next.
 
 + `end`: `str`, default `"\n"`.
 
@@ -58,7 +59,7 @@ Run the test suite with:
 python -m unittest tests
 ```
 
-## Install Local
+## Install local
 
 To install it locally from the source code:
 
@@ -66,5 +67,8 @@ To install it locally from the source code:
 python setup.py develop
 ```
 
-[lint-image]: https://codeclimate.com/github/Baelfire18/snail_print/badges/gpa.svg
-[lint-url]: https://codeclimate.com/github/Baelfire18/snail_print
+[release-image]: https://img.shields.io/github/v/release/Baelfire18/snail_print.svg
+[release-url]: https://github.com/Baelfire18/snail_print/releases/latest
+[codeclimate-image]: https://codeclimate.com/github/Baelfire18/snail_print/badges/gpa.svg
+[codeclimate-url]: https://codeclimate.com/github/Baelfire18/snail_print
+[ci-url]: https://github.com/Baelfire18/snail_print/actions/workflows/tests-and-linter.yml/badge.svg
