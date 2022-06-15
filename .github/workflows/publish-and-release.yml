@@ -1,4 +1,4 @@
-name: CD
+name: Publish and release
 
 on:
   push:
