@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "snail_print"
-version = "0.1.7"
+version = "0.1.8"
 description = "A print funtion that slowly shows the output in console in real time"
 authors = ["Jose Antonio Castro <jacastro18@uc.cl>"]
 license = "MIT"
