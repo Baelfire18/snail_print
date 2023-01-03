@@ -12,9 +12,15 @@ print(
 )
 time.sleep(1)
 print(f" {b.NORMAL}>>>", end=" ")
-snail_print(f"{b.GREEN}from{b.NORMAL} {b.ORANGE}snail_print{b.NORMAL} {b.GREEN}import{b.NORMAL} {b.NORMAL}snail_print", delay=delay)
+snail_print(
+    f"{b.GREEN}from{b.NORMAL} {b.ORANGE}snail_print{b.NORMAL} {b.GREEN}import{b.NORMAL} {b.NORMAL}snail_print",
+    delay=delay,
+)
 
 print(f" {b.NORMAL}>>>", end=" ")
-snail_print(f'{b.NORMAL}snail_print({b.YELLOW}"Hello World"{b.NORMAL}, delay={b.GREEN}{meta_delay}{b.NORMAL})', delay=delay)
+snail_print(
+    f'{b.NORMAL}snail_print({b.YELLOW}"Hello World"{b.NORMAL}, delay={b.GREEN}{meta_delay}{b.NORMAL})',
+    delay=delay,
+)
 snail_print(" Hello World", delay=meta_delay)
 print(" >>>")
